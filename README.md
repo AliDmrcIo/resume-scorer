@@ -337,7 +337,7 @@ RESUME TEXT:
 
 ---
 
-## 🛠 Why This Approach?
+## Why This Approach?
 
 *   **Date Precision:** LLMs often fail at calculating exact dates (they may not know "today's" precise date). Therefore, the AI extracts the dates, and the **Experience Calculation** is handled by deterministic Python code.
 *   **Relevance Filtering:** Instead of counting all irrelevant years of experience, the system only includes **Primary** and **Secondary** relevant roles based on the job requirements.
@@ -406,5 +406,3 @@ Percentage of preferred skills found in the resume.
     ```
 
 ---
-**Summary for Evaluators:**
-"I did not use a simple keyword match. I modeled proficiency levels and experience relevance using mathematical weights to ensure the AI remains a tool for data extraction while the scoring remains deterministic and explainable."
