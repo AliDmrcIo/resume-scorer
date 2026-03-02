@@ -148,7 +148,7 @@ def calculate_score(job_data, candidate_data):
     # Core Scoring
     reasoning = []
 
-    # Skill Scoring (45%)
+    # Skill Scoring (30%)
     job_required_skills = job_data.get('required_skills', [])
 
     # If no mandatory skills are specified in the job description, full marks are awarded.
@@ -182,7 +182,7 @@ def calculate_score(job_data, candidate_data):
         raw_skill_score = (total_skill_points / max_possible_points) * 100
         skill_score = min(raw_skill_score, 100)
 
-    # Experience Scoring (30%)
+    # Experience Scoring (45%)
     req_exp_years = job_data.get('min_experience_years', 0)
 
     adjusted_candidate_years = (primary_years * 1.0) + (secondary_years * 0.5)
